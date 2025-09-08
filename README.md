@@ -1,162 +1,134 @@
 # LoL Arena — Bot Lobbies (Privé)
 
-Bienvenue 👋
-Ce bot Discord sert à organiser des lobbies d’Arène privés sur League of Legends entre membres de la communauté, facilement et sans prise de tête. Tu peux rencontrer d’autres joueurs, lancer une partie quand tu veux, avec des règles claires et un système anti-abus.
+👋 Bienvenue !  
+Ce bot Discord sert à organiser des **lobby d'Arena privés** sur *League of Legends* entre membres de la communauté, facilement et sans prise de tête.  
 
-ℹ️ Le bot est privé (non open-source) et réservé à notre serveur.
+✔️ Trouve des joueurs rapidement  
+✔️ Lance une partie quand tu veux  
+✔️ Profite de règles claires et d’un système anti-abus  
 
-Pourquoi ce bot est utile
+ℹ️ **Le bot est privé (non open-source) et réservé à notre serveur.**
 
-Trouver des games rapidement : annonces de lobbies + bouton “Rejoindre”.
+---
 
-Parties plus propres : vérification Riot, filtres de rang, bans simples.
+## 🚀 Pourquoi ce bot est utile
 
-Progression & fun : leaderboard et historique de parties.
+- **Trouver des games rapidement** : annonces de lobbies + bouton `Rejoindre`.  
+- **Parties plus propres** : vérification Riot, filtres de rang, bans simples.  
+- **Progression & fun** : leaderboard et historique de parties.  
+- **Fair-play protégé** : signalements faciles, sanctions graduelles, anti-contournement de ban.  
 
-Fair-play protégé : signalements faciles, sanctions graduelles, anti-évasion.
+---
 
-Comment jouer (côté joueur)
-1) Vérifie ton compte
+## 🎮 Comment jouer
 
-Tape /verif et suis l’étape “icône de profil”.
-Objectif : éviter les smurfs et l’évasion de sanctions.
+### 1) Vérifie ton compte
+- Quand tu rejoins le serveur, le bot te demandera ton **RiotID#TAG** et de changer ton **icône de profil**.  
+- Si ça échoue : va dans **#Vérification**, ouvre un fil et mentionne un modérateur.  
+➡️ Objectif : éviter les *smurfs* et l’évasion de sanctions.  
 
-2) Rejoins un lobby
+### 2) Rejoins un lobby
+- Consulte le salon **d’annonces** et clique `Rejoindre le lobby`.  
+- Si le lobby est plein/fermé/en cours → bouton grisé.  
+- Besoin de partir ? Utilise `/leave`.  
 
-Regarde le salon d’annonces (ex. #annonces-arena) et clique “Rejoindre le lobby”.
-Si le lobby est plein/fermé/en cours, le bouton est grisé.
+### 3) Règles simples
+- Respecte les bans (catégories + champions spécifiques).  
+- Suis les instructions du **host**.  
+- Signale un comportement avec `/report @user reason:`  
 
-Besoin de partir ? Utilise /leave pour quitter proprement.
+---
 
-3) Règles simples
+## 🏠 Héberger un lobby (Host)
 
-Respecte les bans du lobby (catégories + champions spécifiques).
+1. Va dans **#Host** et appuie sur `Host`.  
+2. Clique sur `Personnaliser` pour ouvrir le panel éphémère :  
+   - **Rangs autorisés** (UNRANKED, GOLD, DIAMOND…).  
+   - **Bans** : catégories (Ranged, Changeformes…) + champions.  
+3. Ouvre le lobby → une annonce est publiée avec `Rejoindre`.  
+4. Les rôles de rang sont pingés selon règles :  
+   - UNRANKED + autre rang → ping UNRANKED seulement.  
+   - Tous les rangs → ping UNRANKED seulement.  
+5. Tu peux **Fermer / Rouvrir** le lobby à tout moment (le message d’annonce s’actualise).  
 
-Suis le host pour l’ouverture, le lancement et la fin de game.
+---
 
-Signale un comportement avec /report @user reason:.
+## 🚨 Signalements & Fair-play
 
-Héberger un lobby (côté host)
-
-Tape /lobbies pour créer ton salon de lobby privé.
-
-Clique “Personnaliser” dans le message du lobby pour ouvrir le panel éphémère :
-
-Rangs autorisés (UNRANKED, GOLD, DIAMOND…)
-
-Bans : catégories (Ranged, Changeformes) et champions spécifiques.
-
-Ouvrir le lobby : une annonce est postée avec un bouton “Rejoindre”.
-
-L’annonce ping des rôles de rang pertinents (voir ci-dessous).
-
-Pas de reping lors des réouvertures ultérieures.
-
-Fermer / Rouvrir quand tu veux (le message d’annonce s’actualise).
-
-Règles de ping par rang :
-
-UNRANKED + n’importe quel autre rang → ping UNRANKED seulement.
-
-Tous les rangs sélectionnés → ping UNRANKED seulement.
-
-Signalements & Fair-play
-Signaler un joueur
-
+### Signaler un joueur
+```bash
 /report @user reason:
-→ Envoi au salon staff dédié.
-→ Tu reçois un message privé de confirmation.
+```
 
-Barème des sanctions (appliquées par le staff)
+➡️ Transmis dans un salon staff dédié.  
+➡️ Confirmation envoyée en message privé.  
 
-Légères (ex. ban d’un champion)
+### Barème des sanctions
+- **Infractions légères** (ex : ban d’un champion)  
+  ⚠️ Warn → Warn → 🔇 Mute 6h → 🔇 Mute 2j → Grave.  
 
-⚠️ Warn → 2) ⚠️ Warn → 3) 🔇 Mute 6h → 4) 🔇 Mute 2 jours → 5e+ = Grave
+- **Infractions graves** (ex : bravery, pick interdit)  
+  🔇 Mute 5j → 🔇 1 semaine → 🔇 1 mois → 🔨 Ban permanent.  
 
-Graves (ex. bravery, pick interdit)
+🚫 **Interdit bot** : le joueur reste sur le serveur mais ne peut plus utiliser le bot.  
+🛡️ Le bot détecte l’évasion via la vérification Riot (PUUID).  
 
-🔇 Mute 5 jours → 2) 🔇 1 semaine → 3) 🔇 1 mois → 4) 🔨 Ban permanent
+---
 
-Interdit : l’utilisateur peut parler sur le serveur mais ne peut plus utiliser le bot (pas de join/host).
+## 🏆 Leaderboard & Résultats
 
-Le bot détecte l’évasion de sanction via la vérification Riot (PUUID).
-Si détection : ban permanent des deux comptes + alerte staff.
+Après chaque partie, le bot lit le match via Riot **Match-V5** et met à jour :  
+- Le **leaderboard** (points, parties jouées).  
+- Les infos du lobby (complet, en cours, fermé).  
+- L’annonce (joueurs, état du bouton).  
 
-Leaderboard & résultats
+---
 
-Après chaque partie, le bot lit le match (Riot Match-V5) et met à jour :
+## 🔧 Commandes utiles
 
-Le leaderboard (points, parties jouées),
+- `/leave` → quitter le lobby.  
+- `/report @user reason:` → signaler un joueur.  
 
-Les infos du lobby (complet, en cours, fermé),
+*Les autres actions (host, personnalisation, fermeture…) se font via les boutons du lobby.*  
 
-L’annonce (players, état du bouton…).
+---
 
-Commandes utiles (joueurs)
+## ❓ FAQ
 
-/verif — Vérifier ton compte via icône de profil.
+**Je ne peux pas cliquer sur “Rejoindre le lobby”.**  
+➡️ Lobby plein/fermé/en cours.  
+➡️ Ton rang n’est pas autorisé.  
+➡️ Tu es déjà dans un lobby.  
+➡️ Tu es interdit d’utiliser le bot (contacte le staff).  
 
-/lobbies — Créer/voir ton lobby (si host).
+**La vérification par icône échoue.**  
+➡️ Choisis l’icône demandée, clique `J’ai changé`.  
+➡️ Sinon → contacte un staff.  
 
-/leave — Quitter le lobby en cours.
+**J’ai été mute/banni.**  
+➡️ Lis la raison en DM et contacte poliment le staff pour un recours.  
 
-/report @user reason: — Signaler un utilisateur.
+---
 
-Les actions du host (personnalisation, ouvrir/fermer…) se font via les boutons sur le message du lobby.
+## 🔒 Données & Confidentialité
 
-Commandes staff (réservé, non visibles pour non-staff)
+- Stockage minimal : **Discord ID, PUUID Riot, stats, historique sanctions**.  
+- Pas de partage externe.  
+- Consultation/suppression possible (selon contraintes de modération).  
 
-/sanction — Appliquer le barème (légère/grave).
+---
 
-/warn @user reason: — Avertissement (DM).
+## 🆘 Support
 
-/mute @user time: reason: send: — Mute + rôle “Muted”, auto-fin si durée.
+- Ouvre un ticket dans **#help**.  
+- DM le staff avec **contexte + capture** si bug.  
 
-/ban_temp @user time: reason: send: — Ban temporaire, auto-unban.
+---
 
-/ban_perm @user reason: send: — Ban permanent.
+## 📖 À propos
 
-/unmute @user, /unban user_id, /warn_delete id:
+- Utilise les API Riot : Account-V1, Summoner-V4, League-V4, Match-V5.  
+- Projet privé → améliorer l’expérience de jeu en Arène.  
 
-/interdit @user time: reason: — Bloque l’accès au bot (peut parler).
+[![Discord](https://img.shields.io/badge/Rejoindre-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)]((https://discord.gg/UbByf6w9kh))
 
-/mod_list @user scope: — Récap (warns, bans, mutes, global).
-
-/profile @user — Fiche complète : Discord/Riot, stats serveur, sanctions, note privée.
-
-/mod_desc @user desc: — Définir/mettre à jour la note privée staff (visible via /profile).
-
-FAQ
-
-Je ne peux pas cliquer sur “Rejoindre le lobby”.
-→ Lobby plein, fermé ou en cours.
-→ Ton rang n’est pas autorisé.
-→ Tu es déjà dans un autre lobby.
-→ Tu es interdit d’utiliser le bot (contacte le staff).
-
-La vérification par icône échoue.
-→ Sélectionne exactement l’icône demandée, puis clique “J’ai changé”.
-
-J’ai été mute/banni.
-→ Lis la raison en DM et contacte poliment le staff pour un recours.
-
-Données & confidentialité
-
-Stockage minimal : Discord ID, PUUID Riot, stats de lobby/leaderboard, historique sanctions.
-
-Pas de partage à des tiers. Données internes à la communauté.
-
-Sur demande raisonnable : consultation/suppression (selon contraintes de modération).
-
-Support
-
-Ouvre un ticket dans #help ou DM le staff.
-
-Pour un bug (boutons, annonces, vérif), donne un contexte + capture si possible.
-
-À propos
-
-Le bot utilise les API Riot (Account-V1, Summoner-V4, League-V4, Match-V5) pour la vérification et les résultats.
-Projet privé, pensé pour améliorer l’expérience de jeu en Arène : organiser, jouer, progresser — tout simplement.
-
-GL HF ! 🎮✨
