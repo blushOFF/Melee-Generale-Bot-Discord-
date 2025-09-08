@@ -130,5 +130,5 @@ Après chaque partie, le bot lit le match via Riot **Match-V5** et met à jour :
 - Utilise les API Riot : Account-V1, Summoner-V4, League-V4, Match-V5.  
 - Projet privé → améliorer l’expérience de jeu en Arène.  
 
-[![Discord](https://img.shields.io/badge/Rejoindre-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)]((https://discord.gg/UbByf6w9kh))
+[![Discord](https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg)](https://discord.gg/UbByf6w9kh)
 
